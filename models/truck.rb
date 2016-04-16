@@ -1,12 +1,11 @@
 class Truck
-
   attr_reader :max_boxes, :boxes
 
   def initialize(max_boxes)
     @max_boxes = max_boxes
     @boxes = []
   end
-
+  
   def full?
     if boxes.size <= 30
       false
